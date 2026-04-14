@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-ass-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .navbar-brand { font-size: 14px !important; line-height: 1.1; }
+        .nav-link { font-size: 13px !important; font-weight: 500; }
+        .bi-list:hover { color: orange !important; }
+
+        
+        .carousel-item h1 { margin-bottom: 0 !important; line-height: 0.9; position: relative; z-index: 10; }
+        .carousel-item img {
+            width: 70%; height: auto;
+            margin-top: -80px !important; margin-bottom: -100px !important; 
+            display: block; margin-left: auto; margin-right: auto;
+            position: relative; z-index: 1;
+        }
+        #heroSlider { margin-bottom: 50px !important; padding-bottom: 20px !important; }
+
+        
+        .collection-section { padding-top: 120px !important; margin-top: 20px !important; }
+        .collection-section h2 { color: #222; font-family: sans-serif; font-size: 45px; letter-spacing: -1px; line-height: 1.1; }
+
+        
+        .products-section { padding: 60px 0; }
+        .product-bg {
+            background-color: #ededed; height: 350px;
+            display: flex; align-items: center; justify-content: center;
+            padding: 30px; margin-bottom: 15px; transition: 0.3s;
+        }
+        .product-bg img { max-height: 100%; width: auto; object-fit: contain; }
+        .product-title { font-size: 18px; font-weight: 400; margin-top: 15px; color: #333; }
+        .old-price { text-decoration: line-through; color: #999; margin-right: 10px; }
+        .new-price { font-weight: bold; color: #333; }
+
+    
+        .product-indicators { position: relative; bottom: -40px; }
+        .product-indicators [data-bs-target] {
+            width: 10px !important; height: 10px !important;
+            border-radius: 50% !important; background-color: #ccc !important;
+            border: none !important; margin: 0 5px;
+        }
+        .product-indicators .active { background-color: #333 !important; }
+        
+.testimonial-container {
+    background-image: url('https://themewagon.github.io/furnish/assets/images/couch-with-cushions-glass-table.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; 
+    width: 100%;
+  }
+  .testimonial-container {
+    margin-top: 120px !important; 
+}
+
+.my-white-box {
+
+    background-color: white;
+    padding: 50px;
+    max-width: 700px;
+}
+.fixed-download-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    z-index: 1000;
+    
+    display: inline-block;
+}
+
+.fixed-download-btn:hover {
+    color: #fff;
+    background-color: #333; 
+}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+  <div class="container-fluid px-4"> 
+    <a class="navbar-brand fw-bold text-dark" href="#">FURNISH<br>TEMPLATE</a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav"> 
+    <li class="nav-item"><a class="nav-link px-3 text-dark" href="web-ass-4.html">HOME</a></li>
+    
+    <li class="nav-item"><a class="nav-link px-3 text-dark" href="web4-aboutus.html">ABOUT US</a></li>
+    
+    <li class="nav-item"><a class="nav-link px-3 text-dark" href="web4-products.html">PRODUCTS</a></li>
+    <li class="nav-item"><a class="nav-link px-3 text-dark" href="web4-testimonials.html">TESTIMONIALS</a></li>
+    <li class="nav-item"><a class="nav-link px-3 text-dark" href="web4-contact.html">CONTACT</a></li>
+</ul>
+    </div>
+    <div class="d-none d-lg-flex align-items-center">
+      <span class="fw-bold me-3" style="font-size: 14px;"><i class="bi bi-telephone-fill me-1"></i> +901234567</span>
+      <i class="bi bi-list fs-3"></i>
+    </div>
+  </div>
+</nav>
+
+<div id="heroSlider" class="carousel slide" data-bs-ride="carousel" style="margin-top: 30px;">
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <div class="container">
+        <h5 class=" fst-italic" style="font-size: 40px; color:#D47F31 ;">%20 Sell</h5>
+        <h1 class="display-4 fw-normal">Comfy Sofa Home-Office</h1>
+        <img src="web-4-imges/sofa-slider-img-1.png" class="img-fluid" alt="Sofa 1">
+        <p class="text-muted">Comfortable and stylish sofa for your home office.</p>
+        <p class="fw-bold fs-4 mb-2">$50</p>
+        <button class="btn btn-dark px-5 py-2 rounded-0">View Details</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <div class="container">
+          <h5 class=" fst-italic" style="font-size: 40px; color:#D47F31 ;">%25 Sell</h5>
+          <h1 class="display-4 fw-normal">New Furniture Arrival</h1>
+          <img src="web-4-imges/slider-img-2.png" class="img-fluid" alt="Sofa 2">
+          <p class="text-muted">Premium quality for your comfort.</p>
+          <p class="fw-bold fs-4 mb-2">$80</p>
+          <button class="btn btn-dark px-5 py-2 rounded-0">View Details</button>
+        </div>
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+    <i class="bi bi-arrow-left text-dark fs-1"></i>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+    <i class="bi bi-arrow-right text-dark fs-1"></i>
+  </button>
+</div>
+
+<section class="collection-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-start">
+                <h2 class="fw-normal mb-3">Our Favourite<br>Collection</h2>
+                <p class="text-muted w-75" style="font-size: 22px;">We are inspired by the realities of life today, in which traditional divides between personal and professional space are more fluid.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products-section">
+    <div class="container">
+        <div id="productSlide" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-1.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Modern Chair</h5>
+                            <p class="price-tag"><span class="old-price">$59.00</span><span class="new-price">$29.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-2.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Floor Lamp</h5>
+                            <p class="price-tag"><span class="old-price">$95.00</span><span class="new-price">$89.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-3.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">High Back Boss Chair</h5>
+                            <p class="price-tag"><span class="old-price">$78.00</span><span class="new-price">$68.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-2.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Floor Lamp</h5>
+                            <p class="price-tag"><span class="old-price">$95.00</span><span class="new-price">$89.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-3.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">High Back Boss Chair</h5>
+                            <p class="price-tag"><span class="old-price">$78.00</span><span class="new-price">$68.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-4.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Stylish Stool</h5>
+                            <p class="price-tag"><span class="old-price">$40.00</span><span class="new-price">$20.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-3.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">High Back Boss Chair</h5>
+                            <p class="price-tag"><span class="old-price">$78.00</span><span class="new-price">$68.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-4.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Stylish Stool</h5>
+                            <p class="price-tag"><span class="old-price">$40.00</span><span class="new-price">$20.00</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-bg"><img src="web-4-imges/product-img-5.jpg" class="img-fluid"></div>
+                            <h5 class="product-title">Modern Table</h5>
+                            <p class="price-tag"><span class="old-price">$150.00</span><span class="new-price">$120.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-indicators product-indicators">
+                <button type="button" data-bs-target="#productSlide" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#productSlide" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#productSlide" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-container d-flex align-items-center justify-content-center">
+    
+    <div class="my-white-box text-center">
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br> consequat. cupidatat non proident, sunt in culpa qui officia deserunt mollit<br> anim id est laborum."
+        </p>
+        <div style="font-size: 22px;"> john deo</div>
+CEO, Company Name
+        </div>
+
+</section>
+<section class="container text-center" style="padding: 100px;">
+    <h2>
+        Subscribe to our Newsletter.
+    </h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6"> <div class="input-group">
+            <input type="email" class="form-control" style="padding: 15px;" placeholder="Enter your email">
+            <button class="btn btn-dark" style="background-color:black;">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+</section>
+<footer class=" text-white py-5" style="background-color: #211F1C;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h6 class="text-uppercase fw-bold " style="color: #837A6D;">Furnish<br>Template</h6>
+            </div>
+            <div class="col-md-8 text-end">
+                <a href="#" class=" text-decoration-none ms-4"style="color: #837A6D;">Home</a>
+                <a href="#" class=" text-decoration-none ms-4"style="color: #837A6D;">Services</a>
+                <a href="#" class="text-decoration-none ms-4"style="color: #837A6D;">Products</a>
+                <a href="#" class="text-decoration-none ms-4"style="color: #837A6D;">About Us</a>
+                <a href="#" class="text-decoration-none ms-4"style="color: #837A6D;">Contact</a>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-5 pt-4">
+    
+    <div class="col-md-8" style="padding: 20px;">
+        <h1 class="display-3 fw-normal" style="font-size: 70px;">We Design all <br> over the world</h1>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-end gap-2">
+        <div class="border border-secondary d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="border border-secondary d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="border border-secondary d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="border border-secondary d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </div>
+    
+</div>
+<div class="row mt-5 align-items-end">
+    <div class="col-md-6">
+        <p class="mb-0" style="color: #837A6D; font-size: 14px;">Email Id</p>
+        <h3 class="fw-light" style="color: #837A6D;">Info@example.com</h3>
+    </div>
+
+    <div class="col-md-6 text-end">
+        <button class="btn btn-outline-light rounded-0 px-5 py-3">
+            Contact us
+        </button>
+    </div>
+    <div class="border-top border-secondary mt-5 pt-4">
+    <div class="row">
+        <div class="col-md-7">
+            <p class="small text-secondary" style="font-size: 18px;">
+                © 2026 Furnish. Developed by <span class="text-white">CodesCandy</span> • Distributed by <br><span class="text-white">ThemeWagon</span>. All rights reserved.
+            </p>
+        </div>
+
+        <div class="col-md-5 text-end">
+            <a href="#" class="text-secondary text-decoration-none small ms-3" style="font-size: 18px;">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small ms-3" style="font-size: 18px;">Terms of Service</a>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<a href="#" class="fixed-download-btn">
+    Download Now
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
